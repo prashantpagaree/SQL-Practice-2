@@ -2,6 +2,7 @@
 create database a4o;
 use a4o;
 
+--import worker.csv into database
 select * from worker;
 
 --Q.1 From workers table print first, last names along with their department in descending order of salaries
