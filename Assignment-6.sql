@@ -1,5 +1,8 @@
+--create database 
 create database assign6;
 use assign6;
+
+--import students.csv into database
 select * from Students;
 
 --1a. Get first 3 characters in the student name
@@ -14,7 +17,7 @@ select *, upper(Student_Name)as Stu_Name_Uppercase,LOWER(Student_Name) as Stu_Na
 
 select REVERSE(Student_Name) Stu_Name_Reverse from Students;
 
---1d. Add the section at the end of each student’s name along with ‘-’Example: Gabriela Benitez-A
+--1d. Add the section at the end of each studentâ€™s name along with â€˜-â€™Example: Gabriela Benitez-A
 
 select CONCAT(student_name, '-',section) as Stu_Name_with_Section from students;
 
@@ -65,4 +68,6 @@ Select month(Joining_Date) as Join_Month,count(SQL_Pass_Fail) as Total_SQL_Fail_
 
 select Section,count(Python_Pass_Fail) as Python_Fail_Stud from Students where Python_Pass_Fail ='Fail' group by section;
 
---2f. Segregate the A section students month wiseselect Month(Joining_Date) As Joining_Month,count(ID) as Total_Stu  from Students where section = 'A' GROUP BY MONTH(Joining_Date);
+--2f. Segregate the A section students month wise
+
+select Month(Joining_Date) As Joining_Month,count(ID) as Total_Stu  from Students where section = 'A' GROUP BY MONTH(Joining_Date);
