@@ -1,4 +1,9 @@
 use assign6;
+
+--import students.csv into database
+
+select * from Students
+
 select * from Students order by Joining_Date ;
 
 --2a. Students whose names start with A and who joined in march
@@ -47,11 +52,13 @@ select * from Students where DATEPART(day,Joining_Date) like '_0';
 select * from Students where convert(varchar(25), Joining_Date ) like '%0';
 select * from Students where cast(Joining_Date as varchar(25) ) like '%0';
 
---k. Convert the registration column format from this ‘YYYY-MM-DD’ to ‘YYYYMMDD’. (Example ‘2014-02-05’ becomes ‘20140205)
+--k. Convert the registration column format from this â€˜YYYY-MM-DDâ€™ to â€˜YYYYMMDDâ€™. (Example â€˜2014-02-05â€™ becomes â€˜20140205)
+
 select Joining_Date, REPLACE(CAST(Joining_Date as Varchar(30)),'-','') as New_Join_Date from Students;
 
 --l. WAQ to print SQL Marks column in marks/100 format.(Example 89 becomes 89/100)
-select SQL_Marks, CONCAT(SQL_Marks,'/','100') as SQL_Percentage from Students;
+
+select SQL_Marks, CONCAT(SQL_Marks,'/','100') as SQL_Percentage from Students;
 
 --m. Print a code in a new column which follows: SQL-Excel-Python Marks (Example 70, 92, 44 becomes 70-92-44)
 
