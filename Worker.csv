@@ -1,0 +1,17 @@
+WORKER_ID,FIRST_NAME,LAST_NAME,SALARY,JOINING_DATE,DEPARTMENT
+1,Monika,Arora,100000,"Thursday, 20 February, 2014",HR
+2,Niharika,Verma,80000,"Thursday, November 6, 2014",Admin
+3,Vishal,Singhal,300000,"Thursday, 20 February, 2014",HR
+4,Amitabh,Singh,500000,"Thursday, 20 February, 2014",Admin
+5,Vivek,Bhati,500000,"Thursday, November 6, 2014",Admin
+6,Vipul,Diwan,200000,"Thursday, November 6, 2014",Account
+7,Satish,Kumar,75000,"Monday, 20 January, 2014",Account
+8,Geetika,Chauhan,90000,"Tuesday, November 4, 2014",Admin
+9,Ashok,chandra,200000,"Saturday, December 6, 2014",Account
+10,Nitin,Kumar,15000,"Thursday, 20 February, 2014",HR
+11,Pushkar,Sinha,90000,"Thursday, December 4, 2014",Admin
+12,Shantanu,Lal,180000,"Tuesday, November 4, 2014",Account
+13,Rohan,Tiwari,600000,"Saturday, December 6, 2014",Account
+14,Jitendra,Yadav,450000,"Thursday, 20 February, 2014",HR
+15,Kapil,Dev,700000,"Thursday, October 9, 2014",Admin
+16,Sachin,Tendulkar,460000,"Tuesday, January 14, 2014",HR
